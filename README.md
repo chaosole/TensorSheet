@@ -1,14 +1,10 @@
 
 # TensorSheet: 增强AI长对话的结构化记忆系统
 
-[//]: # (**欢迎来到TensorSheet项目的开发者文档！** 这份文档专为希望深入了解系统内部结构、参与开发和贡献代码的开发者朋友们准备。)
-
 > [!IMPORTANT]
 > **重要提示：您正在阅读的是TensorSheet Core开发文档。**
 >
 > 该项目不涉及应用层面的实现细节，专注于核心算法和数据结构的设计与优化。
-
-[//]: # (> 如果您是普通用户，建议查看[用户指南]&#40;https://github.com/tensorsheet/docs/user-guide&#41;获取稳定版使用说明。)
 
 ## 项目介绍
 
@@ -21,6 +17,14 @@ TensorSheet是一个专为增强AI长对话场景设计的结构化记忆系统�
 - **多维度数据关联**：突破了纯向量空间的相似度匹配局限，通过灵活的单元格定位机制和哈希映射存储建立丰富的关系网络
 - **领域驱动的表格设计**：通过领域分层(全局、角色、对话)和类型系统(自由、动态、固定、静态)建立灵活的记忆组织框架
 - **Object单元存储**：单元格可存储复杂对象结构，包括嵌套对象、数组、函数引用甚至可视化组件，实现"数据+逻辑+交互"的一体化存储
+
+<br>
+
+### 正在使用该数据库的测试或案例项目：
+
+[ST记忆增强插件](https://github.com/muyoou/st-memory-enhancement)
+
+<br>
 
 ## 开发准备与流程
 
@@ -319,30 +323,6 @@ sheet.on('structureChange', (changeInfo) => {
   // 重新渲染表格或更新相关组件
 });
 ```
-
-[//]: # (## 👥 贡献者名单)
-
-[//]: # ()
-[//]: # (感谢所有为该项目做出贡献的伙伴们！)
-
-[//]: # ()
-[//]: # (<a href="https://github.com/muyoou/st-memory-enhancement/graphs/contributors">)
-
-[//]: # (  <img src="https://contrib.rocks/image?repo=muyoou/st-memory-enhancement" />)
-
-[//]: # (</a>)
-
-[//]: # ()
-[//]: # (**##Master 分支代码统计**)
-
-[//]: # ()
-[//]: # (![Alt]&#40;https://repobeats.axiom.co/api/embed/ece4e039de7cf89ed5ccc9fba2e9b432e44dfaaa.svg "Repobeats analytics image"&#41;)
-
-[//]: # ()
-[//]: # (**##Dev 分支代码统计**)
-
-[//]: # ()
-[//]: # (![Alt]&#40;https://repobeats.axiom.co/api/embed/eb3c2af1bcdb84704bb9ff8f61379fe38d634884.svg "Repobeats analytics image"&#41;)
 
 ## 再次感谢您的参与和支持！
 
